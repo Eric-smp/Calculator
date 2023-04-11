@@ -1,23 +1,23 @@
-var numone = document.getElementById("numone")
-var numtwo = document.getElementById("numtwo")
-var result = document.getElementById("resultado")
 
-function soma(){
-  const soma = numone + numtwo
-  console.log("resultado da soma", soma)
-  result.innerHTML=soma
+function somar(){
+  const numone = document.getElementById('numone').value
+  const numtwo = document.getElementById('numtwo').value
+  document.getElementById('resultado').innerHTML= parseFloat(numone, 10)+ parseFloat(numtwo, 10)
 }
 
 function subtracao(){
-  const subtracao = numone - numtwo
-  console.log("resultado da subtração", subtracao)
+  const numone = document.getElementById('numone').value
+  const numtwo = document.getElementById('numtwo').value
+  document.getElementById('resultado').innerHTML= parseFloat(numone, 10) - parseFloat(numtwo, 10)
 }
 function divisao(){
-  const divisao = numone / numtwo
-  console.log("O resultado da divisão é", divisao)
+  const numone = document.getElementById('numone').value
+  const numtwo = document.getElementById('numtwo').value
+  document.getElementById('resultado').innerHTML= parseFloat(numone, 10) / parseFloat(numtwo, 10)
 }
 
 function multiplicacao(){
-  const multiplicacao = numone * numtwo
-  console.log("O resultado da multiplicação é ", multiplicacao)
+  const numone = document.getElementById('numone').value
+  const numtwo = document.getElementById('numtwo').value
+  document.getElementById('resultado').innerHTML= parseFloat(numone, 10) * parseFloat(numtwo, 10)
 }
