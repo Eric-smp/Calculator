@@ -3,9 +3,9 @@ var numtwo = document.getElementById("numtwo")
 var result = document.getElementById("resultado")
 
 function soma(){
-  result.innerHTML = numone + numtwo
   const soma = numone + numtwo
   console.log("resultado da soma", soma)
+  result.innerHTML=soma
 }
 
 function subtracao(){
