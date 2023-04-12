@@ -15,17 +15,21 @@ function result(){
   const n1 = numone.split(' ')[0]
   const n2 = numone.split(' ')[2]
   console.log(opera)
-  if (opera === '+'){
+  switch(opera){
+  case '+':
     document.getElementById('resultado').innerHTML= parseFloat(n1) + parseFloat(n2)
-  }
-  if(opera === '-'){
+    break;
+  case '-':
     document.getElementById('resultado').innerHTML= parseFloat(n1) - parseFloat(n2)
-  }
-  if(opera === 'x' || opera === '*'){
+    break;
+  case '*':
     document.getElementById('resultado').innerHTML= parseFloat(n1) * parseFloat(n2)
-  }
-  if(opera === '/'){
+    break;
+  case '/':
     document.getElementById('resultado').innerHTML= parseFloat(n1) / parseFloat(n2)
+    break;
+  default:
+    document.getElementById('resultado').innerHTML = 'Operação não reconhecida'
+    break;
   }
-  
 }
