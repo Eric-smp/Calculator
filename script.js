@@ -8,13 +8,16 @@ const testeTree = '5  *  5'
 const multi = testeTree.slice(1,5) */
 
 
-
 function result(){
-  const numone = document.getElementById('numone').value
-  const numtwo = document.getElementById('numtwo').value
-  const opera = numone - numtwo
-  if(opera){
-    document.getElementById('resultado').innerHTML= parseFloat(numtwo) - parseFloat(numone) 
-  }
-  
+  const nascimento = document.getElementById("anoOne").value
+  const data = new Date()
+  const dia = String (data.getDay()).padStart(2,0) //para ter o 0 antes do numero inteiro de 1 á 9
+  const mes = String(data.getMonth() + 1). padStart(2,0)// 01, 02, 03
+  const ano = data.getFullYear()
+
+  const dataAtual= `${dia}/${mes}/${ano}`
+  const valor = dataAtual - nascimento
+  document.getElementById('resultado').innerHTML=valor
+
+
 }
